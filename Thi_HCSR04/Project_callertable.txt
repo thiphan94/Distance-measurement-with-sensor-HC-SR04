@@ -1,0 +1,21 @@
+main
+	UART1_Init
+	Mul_16X16_U
+	int2double
+		NRM3232
+			RES032
+			SETFUN32
+			FIXSIGN32
+	Div_32x32_FP
+		SETFDZ32
+		RES032
+		SETFOV32
+		SETFUN32
+	double2int
+		SETIOV3224
+	afficheNombre
+		Div_16x16_S
+			Div_16x16_S_L
+		Mul_16X16_U
+		afficheChiffre
+	UART1_Write
